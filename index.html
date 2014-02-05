@@ -4,25 +4,26 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>GDI - WordPress 101</title>
+		<title>Girl Develop It - WordPress 101</title>
 
 		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
 
 		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/light.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -34,10 +35,9 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
-        <!-- Opening -->
+
 				<section id="beginning-slide">
-					<h3>Girl Develop It</h3>
+					<img src="img/gdi-logo-sm.png" class="no-border" />
 					<h1>WordPress 101</h1>
 					<p>
 						<small>With Tracy Levesque</small>
@@ -45,18 +45,18 @@
 					<p>
 						<small><a href="https://twitter.com/LilJimmi" target="_blank">@LilJimmi</a> &#8226; 
 						<a href="mailto:tracy@yikesinc.com">tracy@yikesinc.com</a> &#8226; 
-						<a href="http://yikesinc.com" target="_blank">yikesinc.com</a></small>
+						<a href="http://TheTracyL.com" target="_blank">TheTracyL.com</a></small>
 					</p>
 					
 					<p>
-						Slides located at: <a href="http://thetracyl.com/gdi/">TheTracyL.com/gdi</a>
+						Slides located at: <a href="http://gdi.TheTracyL.com/101">gdi.TheTracyL.com/101</a>
 					</p>
 					
 				</section>
 				
 				<section>
 					<h2>About you</h2>
-					<h3>Why you want to get into WordPress</h3>
+					<h3>Why do you want learn WordPress?</h3>
 					<ul>
 						<li>Your name and background</li>
 						<li>Why you're here</li>
@@ -79,33 +79,29 @@
 					<h3>No question is stupid!</h3>
 					<ul>
 						<li>Raise your hand or speak up at any point</li>
-						<li>Grab a TA whenever you need personalized help</li>
-						<li>I will teach code and "push button" versions of information covered</li>
+						<li>Grab a TA whenever you need one-on-one help</li>
 						<li>"Learn and return"</li>
 					</ul>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Day 1</h2>
-					<h3>Today you will...</h3>
+					<h2>Schedule</h2>
+					<h3>This morning you will...</h3>
 					<ul>
 						<li>Learn what WordPress is</li>
 						<li>Learn how to install it</li>
 						<li>Learn how to keep it secure</li>
-						<li>Tour and learn all administrative backend functionality</li>
-						<li>Learn how to build out a functioning site without touching code</li>
-						<li>Take a 15 minute break at 3pm</li>
+						<li>Learn all administrative backend functionality</li>
+						<li>Learn how to build out a site</li>
+						<li>Take a 1 hour lunch break at 1pm</li>
 					</ul>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Ready?</h2>
 					<h3>Here we go...</h3>
 				</section>
-				
-				<!-- Examples of basic html based slides -->
+
 				<section>
 					<h2>What is WordPress?</h2>
 					<h3>Official description from WordPress.org</h3>
@@ -114,7 +110,6 @@
 					</blockquote>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>WordPress is</h2>
 					<h3>Popular</h3>
@@ -123,7 +118,22 @@
 					</p>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
+				<section>
+					<h2>WordPress is</h2>
+					<h3>Popular</h3>
+					<p>
+						As of Matt Mullenweg's 2013 "<a href="http://wordpress.tv/2013/07/29/matt-mullenweg-state-of-the-word-2013/" target="_blank">State of the Word</a>"
+					</p>
+
+					<ul>
+						<li>WordPress powered 18.9% of the internet, up 2.2% from the previous year.</li>
+						<li>Over the previous 12 months, WordPress was downloaded a total of 46 million times</li>
+					</ul>
+				</section>
+
+
+
+				
 				<section>
 					<h2>WordPress is</h2>
 					<h3>Free, open source, web-based software</h3>
@@ -132,16 +142,14 @@
 					</p>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>WordPress is</h2>
 					<h3>A website building framework</h3>
 					<p>
-						WordPress allows people to build and design a website with a visual admin and custom code.
+						WordPress is a platform for building and designing a website.
 					</p>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>WordPress is</h2>
 					<h3>A content management system</h3>
@@ -150,43 +158,39 @@
 					</p>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>WordPress.org vs. WordPress.com</h2>
 					<ul>
 						<li><strong>WordPress.org</strong> - Web software used to build a website on a hosting account with a domain name. Sites can be built and modified using themes, plugins or custom code</li> <br />
 
-						<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons). Choices of themes are limited, plugins can not be installed and code can not be modified</li>
+						<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons), theme choices are limited, plugins can not be installed and code can not be modified</li>
 					</ul>
 					
-					<a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank"><img src="images/Sign-Info.png" /></a>
+					<a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank"><img src="img/Sign-Info.png" /></a>
 				</section>
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Installing WordPress</h2>
 					<h3>What WordPress needs to run</h3>
 					<ul>
 						<li>A hosting account running PHP version 5.2.4 or greater and MySQL version 5.0 or greater</li>
-						<li>A domain name</li>
 						<li>Software from WordPress.org or a "one-click install" feature through the hosting account control panel</li>
+						<li>A domain name (or temporary URL provided by your host)</li>
 					</ul>
 				</section>
 				
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Installing WordPress</h2>
 					<h3>What Is Needed For a Manual Install</h3>
 					<ul>
-						<li>Access to cpanel (or similar) to create a database and database user</li>
-						<li>A FTP Program. FTP is the method used to upload and download files between a computer and a hosting account</li>
+						<li>Access to your hosting control panel to create a database and database user</li>
+						<li>A FTP Program. FTP (or SFTP) is the method used to upload and download files between a computer and a hosting account</li>
 						<li>A Web browser. Installation is performed step-by-step on a web browser</li>
 					</ul>
 				</section>
 				
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Installing WordPress</h2>
 					<h3>Demo Time!</h3>
@@ -198,28 +202,26 @@
 				</section>
 				
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Security</h2>
-					<h3>Being popular means you're a target for hackers</h3>
+					<h3>Being popular means you're a target</h3>
 					<p>
-						It is important that you take security seriously when running a WordPress site.
-					<p>
+						It is important that you take security seriously when running a non-static site like WordPress.
+					</p>
 				</section>
 				
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Security</h2>
 					<h3>During install</h3>
 					<ul>
 						<li>Make your database table prefix unique. Don't use "wp_" or "wordpress_"</li>
-						<li>Make your database password strong. If your host has a password generator use it.</li>
-						<li><strong>Do not use "admin" as your admin username.</strong> "admin" is the default WordPress username and it's used during brute force attacks. Use a unique username and a very strong Password</li>
+						<li>Create a new database user, don't use the default</li>
+						<li>Make your database user password strong.</li>
+						<li><strong>Do not use "admin" as a username.</strong> "admin" used to be the default WordPress username. Use a unique username and a very strong Password</li>
 					</ul>
 				</section>				
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Security</h2>
 					<h3>Before you start: WordPress hardening</h3>
@@ -235,18 +237,16 @@
 					</ul>
 				</section>			
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Security</h2>
 					<h3>After your site's live: Monitoring and protection</h3>
 					<ul>
 						<li><strong>Keep WordPress core, themes and plugins updated!</strong></li>
 						<li>Use a service that scans and protects your site daily from hackers and malware</li>
-						<li>Use a firewall service that shields your site from  hackers and malware. Some hosts, like WPEngine.com has this built into their hosting service</li>
+						<li>Use a firewall service that shields your site from  hackers and malware. Some hosts, like WPEngine.com, have this built into their hosting service</li>
 					</ul>
 				</section>		
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Security</h2>
 					<h3>If you do get hacked</h3>
@@ -254,44 +254,42 @@
 						<li>Use a malware removal service.</li>
 							<ul>
 								<li><strong><a href="http://sucuri.net/" target="_blank">Sucuri.net</a></strong> Reasonably priced WordPress security experts</li>
-								<li><strong><a href="http://WPEngine.com/" target="_blank">WPEngine.com</a></strong> has this service built into their hosting service</li>
+								<li><strong><a href="http://WPEngine.com/" target="_blank">WPEngine.com</a></strong> WordPress hosting that includes malware cleanup if needed</li>
 							</ul>
 					</ul>
 				</section>		
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>A Tour of Your New Site</h2>
-					<h3>WordPress comes with the default theme Twenty Twelve (it's responsive)</h3>
+					<h2>A Tour of the Front End</h2>
+					<h3>WordPress comes with the default theme Twenty Fourteen activated</h3>
 					<ul>
 						<li>A sample post on the home page.</li>
 						<li>A sample page</li>
 						<li>A sample comment</li>
 						<li>A sample tag line "Just another WordPress site"</li>
+						<li>A set of sidebar widgets</li>
 					</ul>
 				</section>			
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>A Tour of Your New Site's Admin Dashboard</h2>
+					<h2>A Tour of the Backend Admin</h2>
 					<h3>Located at: yourdomain.com/wp-admin/ </h3>
 					<p>
 						The admin is divided into 3 areas:
 						<ol>
 							<li>The top menu bar</li>
-							<li>The left-hand menu used to navigate to most of the admin functionality</li>
+							<li>The left-hand menu used to navigate to most admin functionality</li>
 							<li>The main content window where most admin functionality is performed</li>
 						</ol>
 					</p>	
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>A Tour of Your New Site's Admin Dashboard</h2>
+					<h2>A Tour of the Backend Admin</h2>
 					<h3>Located at: yourdomain.com/wp-admin/ </h3>
 
 					<p>
-						<strong>Tip:</strong> You can change the display of a particular admin page by clicking on the "screen options" tab in the upper right corner.
+						<strong>Tip:</strong> You can change what's displayed on an admin page by clicking on the "screen options" tab in the upper right corner.
 					</p>
 
 					<p>
@@ -299,9 +297,8 @@
 					</p>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Setting Up Your New Site</h2>
+					<h2>Setting Up Your Site</h2>
 					<h3>The Settings menu</h3>
 
 					<ul>
@@ -310,11 +307,10 @@
 						<li><strong>Reading:</strong>  Set site home page, # of posts, rss settings and search engine visibility</li>
 						<li><strong>Discussion:</strong> Manage comment settings</li>
 						<li><strong>Media:</strong> Make default image sizes and other media settings</li>
-						<li><strong>Permalinks:</strong> Define the structure of your friendly URLs</li>
+						<li><strong>Permalinks:</strong> Define the structure of site URLs</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Exercise time!</h2>
 					<h3>Some tasks to get you familiar with the Settings menu and dashboard</h3>
@@ -325,26 +321,24 @@
 						<li>Require users to register before posting a comment</li>
 						<li>Require comments to be approved by an administrator before they are posted</li>
 						<li>Change the dimensions of "Large size" images</li>
-						<li>Remove the "WordPress Blog" and "Other WordPress news" from the dashboard</li>
+						<li>Remove the "WordPress News" from the dashboard</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Changing Site Layout & Design</h2>
+					<h2>Changing Site Appearance</h2>
 					<h3>The Appearance menu</h3>
 
 					<ul>
-						<li><strong>Themes:</strong> Shows the current theme in use and any other themes installed (more on this on day 2)</li>
-						<li><strong>Widgets:</strong> Handy elements you can add to site sidebars or other "widgetized" areas</li>
-						<li><strong>Menus:</strong>  Awesome menu manager (more on this soon)</li>
+						<li><strong>Themes:</strong> Manage the current theme in use and other installed themes</li>
+						<li><strong>Widgets:</strong> Manage widgets you can add to site sidebars or other "widgetized" areas</li>
+						<li><strong>Menus:</strong>  Manage Custom menus</li>
 						<li><strong>Header:</strong> Manage header text and image</li>
 						<li><strong>Background:</strong> Manage background color and image</li>
 						<li><strong>Editor:</strong> Dangerous way to edit theme and plugin flies. This is disabled if you "harden" WordPress</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Exercise time!</h2>
 					<h3>Some tasks to get you familiar with the Appearance menu</h3>
@@ -357,27 +351,22 @@
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Adding Content</h2>
 					<h3>Pages and Posts</h3>
 
 					<ul>
-						<li><strong>Pages:</strong> Regular single website pages with content</li>
+						<li><strong>Pages:</strong> Regular static website pages with content</li>
 						<li><strong>Posts:</strong> Entries (like blog posts) that have a date, categories and tags assigned to them. They can be listed in a particular order (chronologically, alphabetically, etc.) and fed to other sites or blog readers via an RSS feed</li>
 					</ul>
 					
 					
-					<a href="http://www.chaostoclarity.com/how-wordpress-works-page-vs-post-infographic/" target="_blank"><img src="images/Sign-Info.png" /></a>
+					<a href="http://www.chaostoclarity.com/how-wordpress-works-page-vs-post-infographic/" target="_blank"><img src="img/Sign-Info.png" /></a>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Let's Play</h2>
 					<h3>Is it a Page or a Post?</h3>
-					<p>
-						<small>Stolen from Pam Selle :-)</small>
-					</p>
 
 					<ul>
 						<li>Restaurant review</li>
@@ -391,33 +380,34 @@
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Adding Content</h2>
 					<h3>Pages</h3>
 
 					<ul>
 						<li><strong>Page Title</strong></li>
-						<li><strong>Permalink:</strong> Change the name of the page URL</li>
+						<li><strong>Permalink:</strong> Manage the name of the page URL</li>
 						<li><strong>Page Content</strong></li>
-						<li><strong>Discussion:</strong> Turn comments on or off</li>
-						<li><strong>Publish</strong> Change publish status and visibility settings</li>
-						<li><strong>Page Attributes:</strong> Assign a page "parent", choose template and sort order</li>
-						<li><strong>Featured Image:</strong> Assign an unique header image for page (requires theme support)</li>
+						<li><strong>Revisions:</strong> View and restore previous versions of the page</li>
+						<li><strong>Custom Fields:</strong> Additional fields (display requires theme support)</li>
+						<li><strong>Discussion:</strong> Turn comments on or off for this page</li>
+						<li><strong>Comments:</strong> Displays current page comments</li>
+						<li><strong>Slug:</strong> Manage the name of the page slug</li>
+						<li><strong>Author:</strong> Switch between post authors (display requires theme support)</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Adding Content</h2>
 					<h3>Pages</h3>
 
-					<p>
-						<strong>Tip:</strong> Use the bulk editor on the page list to turn comments off multiple pages at a time.
-					</p>
+					<ul>
+						<li><strong>Publish</strong> Change publish status and visibility settings and view revisions</li>
+						<li><strong>Page Attributes:</strong> Assign a page "parent", choose template and sort order</li>
+						<li><strong>Featured Image:</strong> Assign an image to page (requires theme support)</li>
+					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Adding Content</h2>
 					<h3>Using the content editor</h3>
@@ -425,24 +415,32 @@
 					<ul>
 						<li><strong>Visual and Text tabs:</strong> Toggle between WYSIWYG and code view</li>
 						<li><strong>Add Media</strong> Upload pictures and other files</li>
-						<li><strong>Button Bar</strong> Lots of formatting options</li>
+						<li><strong>Button Bar</strong> Use formatting and display options</li>
+						<li><strong>Embeds</strong> <a href="http://codex.wordpress.org/Embeds" target="_blank">Paste links to popular media services</a> and they will automatically display on the page</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Adding Content</h2>
 					<h3>Posts</h3>
 
 					<ul>
-						<li><strong>Excerpt</strong> Some themes and plugins use post excerpts</li>
-						<li><strong>Author:</strong> Switch between post authors (requires theme support)</li>
-						<li><strong>Format:</strong> Choose between several Tumblr-like formats</li>
+						<li><strong>Excerpt</strong> Determine an excerpt for a post (display requires theme support)</li>
+						<li><strong>Send Trackbacks:</strong> More <a href="http://codex.wordpress.org/Introduction_to_Blogging#Trackbacks" target="_blank">infomation on trackbacks</a></li>
+						<li><strong>Format:</strong> Choose between several post formats (display requires theme support)</li>
 						<li><strong>Categories and Tags:</strong> Assign categories and tags to allow posts to be organized by subject</li>
 					</ul>
+				</section>	
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Tip</h3>
+
+					<p>
+						Use the bulk editor on the page or post list to make edits to multiple pages or posts at a time (like removing comments).
+					</p>
 				</section>		
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Exercise time!</h2>
 					<h3>Some tasks to get you familiar with pages, posts and adding content</h3>
@@ -457,44 +455,41 @@
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Managing Menus</h2>
-					<h3>The Appearance > Menus manager</h3>
+					<h3>Appearance > Menus</h3>
 					
 					<p>
-						The Menus manager is awesome, but it requires theme support to work. Twenty Twelve comes with one menu location.
+						Easily create and manage navigation menus
 					</p>
 
 					<ul>
-						<li><strong>Create menus:</strong> Name your menu and hit save</li>
+						<li><strong>Create menus:</strong> Enter a menu name and click "Create Menu"</li>
 						<li><strong>Add pages:</strong> Add existing pages, custom links or category pages</li>
-						<li><strong>Order Pages</strong> Just drag and drop your pages in the order you want. Indent pages to make them children of other pages</li>
-						<li><strong>Assign Menu to Theme location</strong> When the menu is ready to go live save it, assign it to a theme location and save.</li>
+						<li><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages</li>
+						<li><strong>Assign Menu to Theme location:</strong> When the menu is ready, assign it to a theme location and click "Save Menu."</li>
+						<li><strong>Manage Locations Tab:</strong> Assign menus to theme locations</li>
 					</ul>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Managing Comments</h2>
 					<h3>The Comments menu</h3>
 
 					<p>
 						View, approve, delete and mark comments as spam
-					<p>
+					</p>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Managing Media</h2>
 					<h3>The Media menu</h3>
 
 					<p>
 						View all files that have been uploaded to the site via the content editor. Add, edit and delete files.
-					<p>
+					</p>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Managing Users</h2>
 					<h3>The Users menu</h3>
@@ -506,13 +501,12 @@
 					</ul>
 				</section>		
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Managing Users</h2>
 					<h3>User roles</h3>
 					
 					<p>
-						Users can be given certain levels of editing privileges. 
+						Users can be given <a href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">certain levels of editing privileges</a>. 
 					</p>
 
 					<ul>
@@ -523,65 +517,348 @@
 						<li><strong>Subscriber:</strong> ability to only manage their profile</li>
 					</ul>
 				</section>	
+
+
 				
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Resources</h2>
-					<h3>Join the GirlDevelopIt Philly - WordPress Group on Facebook</h3>
+					<h1>Lunch break!</h1>
+					<h3>See you back here in an hour</h3>
+				</section>
+
+
+				
+				<section>
+					<h2>Welcome back!</h2>
+					<h3>This afternoon you will...</h3>
+					<ul>
+						<li>Learn about Plugins and how to find, install and activate them</li>
+						<li>Learn about Themes and how to find, install, preview and activate them</li>
+						<li>Take a 15 minute break</li>
+						<li>Learn about futher options for customizing WordPress</li>
+						<li>End with resources, questions and wrap-up</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>But First</h2>
+					<h3>A review...</h3>
+					<ul>
+						<li>What is the difference between WordPress.org and WordPress.com?</li>
+						<li>What username should you never EVER use for a WordPress user account?</li>
+						<li>What is the difference between a Page and a Post?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>What are Plugins?</h2>
+					<h3>Official description from WordPress.org</h3>
+					<blockquote>
+						Plugins can extend WordPress to do almost anything you can imagine.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Plugins are</h2>
+					<h3>Powerful</h3>
+					<p>
+						Plugins are used to add functionality to WordPress. Examples include ecommerce, SEO, forms, photo galleries, social media sharing, forums and much more!
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins are</h2>
+					<h3>Often Free</h3>
+					<p>
+						Right now there are 29,265 free plugins in the official <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a>.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Plugins menu</h3>
+					<p>
+						WordPress comes with 2 plugins:
+						<ul>
+							<li><strong>Akismet:</strong> Protects your blog from comment and trackback spam. This plugin requires an <a href="http://akismet.com/wordpress" target="_blank">Akismet key</a></li>
+							<li><strong>Hello Dolly:</strong> Adds a random lyric from "Hello Dolly" to the upper right-hand corner of admin screen.</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Managing Plugins</h3>
+					<p>
+						<ul>
+							<li><strong>Activate/Deactivate:</strong> Turns plugins "on" and "off"</li>
+							<li><strong>Edit:</strong> Ability to edit plugin files NOT RECOMMENDED</li>
+							<li><strong>Delete:</strong> Delete deactivated plugins</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Finding plugins</h3>
+					<ul>
+						<li>Searching under Plugins > Add New</li>
+						<li>Browsing the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>3 ways to install plugins</h3>
+					<ul>
+						<li>Clicking "Install Now" from "Install Plugins" search results</li>
+						<li>Download a plugin zip file and install it via the "Upload" link</li>
+						<li>Unzip the plugin files and upload it via FTP to the<br /> <code>/wp-content/plugins</code> folder</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Usage tip</h3>
+					<p>
+						Plugins often use <a href="http://codex.wordpress.org/Shortcode" target="_blank">shortcodes</a> to add content to a page or post.
+					</p>
+					<p>
+						For example, the plugin <a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> uses the shortcode <code>[contact-form-7 id="105"]</code> (the ID is the ID of the form) to allow you a form to a page or post. 
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Security tip - Vet plugins first</h3>
+					<ul>
+						<li><strong>Ratings</strong> Read the plugin reviews</li>
+						<li><strong>Maintenance</strong> Check to see it the plugin has regular updates</li>
+						<li><strong>Support</strong> See if the plugin developers regularly answer support questions</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Top Free Plugins</h2>
+					<h3>Free plugins I couldn't live without</h3>
+					<ul>
+						<li><strong><a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7:</a></strong> Used to make simple contact forms </li>
+						<li><strong><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast:</a></strong> SEO plugin for WordPress </li>
+						<li><strong><a href="http://wordpress.org/plugins/nextgen-gallery/" target="_blank">Nextgen Gallery:</a></strong> An image gallery plugin that also has available add-on plugins</li>
+						<li><strong><a href="http://wordpress.org/plugins/woocommerce/" target="_blank">WooCommerce:</a></strong> Ecommerce plugin</li>
+						<li><strong><a href="http://wordpress.org/plugins/easy-fancybox/" target="_blank">Easy Fancybox:</a></strong> Simple image effects</li>
+						<li><strong><a href="http://wordpress.org/plugins/sucuri-scanner/" target="_blank">Sucuri Free:</a></strong> Malware scanning and 1-click hardening</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Top Premium Plugins</h2>
+					<h3>For-pay plugins I couldn't live without</h3>
+					<ul>
+						<li><strong><a href="http://www.gravityforms.com/" target="_blank">Gravity Forms:</a></strong> A very powerful and feature-rich forms builder</li>
+						<li><strong><a href="http://ithemes.com/purchase/backupbuddy/" target="_blank">Backup Buddy:</a></strong> Easily backup, restore and migrate a WordPress site</li>
+						<li><strong><a href="http://sliderpro.net/" target="_blank">Slider Pro:</a></strong> My favorite slider plugin</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Exercise time!</h2>
+					<h3>Some tasks to get you familiar with installing and activating plugins</h3>
+
+					<ul>
+						<li>Search for plugins via Plugins > Add New and try some</li>
+						<li>Browse the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugins Directory</a>, download one and install it using the "upload" link</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>What are Themes?</h2>
+					<h3>Official description from WordPress.org</h3>
+					<blockquote>
+						Fundamentally, the WordPress Theme system is a way to 'skin' your weblog. Yet, it is more than just a 'skin.' Skinning your site implies that only the design is changed. WordPress Themes can provide much more control over the look and <em>presentation</em> of the material on your website.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Powerful</h3>
+					<p>
+						A theme not only determines how a site looks, it can also determine its functionality. There are themes that can turn a WordPress site into an online store, an art portfolio, project management system, CRM, bug tracking system and more.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Often Free</h3>
+					<p>
+						Right now there are 2,281 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Managing Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						WordPress currently comes with 3 themes: Twenty Fourteen, Twenty Thirteen and Twenty Twelve.
+					</p>
+					<p>
+						Under <strong>Appearance > Themes</strong> is a list of all installed themes. The theme in use is labeled "Current" and others "Available."
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						<strong>"Live Preview" before you activate or customize a theme</strong>
+					</p>
+					<p>
+						Click "Customize" under the current theme or "Live Preview" under an available theme to see how a new or modified theme will look before you commit to it.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Finding new themes</h3>
+					<ul>
+						<li>Searching under the "Install Themes" tab</li>
+						<li>Browsing the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>3 way to install themes</h3>
+					<ul>
+						<li>Install right from the "Install Themes" tab</li>
+						<li>Download a theme zip file and install it via the "upload" link</li>
+						<li>Unzip the theme files and upload it via FTP to the<br /> <code>/wp-content/themes</code> folder</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Exercise time!</h2>
+					<h3>Some tasks to get you familiar with installing, previewing and activating themes</h3>
+					<ul>
+						<li>Use the live theme previewer to see how Twenty Thirteen will look on your site and try activating it</li>
+						<li>Search for themes via the "Install Themes" tab and give one a try</li>
+						<li>Browse the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>, download one and install it using the "upload" link</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Where to go from here?</h2>
+					<h3>Further Customizing WordPress</h3>
 
 					<p>
-						A group for GirlDevelopIt Philly students where members can network with each other, post questions and help each other navigate the world of WordPress.
+						<strong>Power Users</strong> - Use theme frameworks to tweak site design.
+					</p>
+
 					<p>
+						<strong>Web Designers</strong> - Use HTML, CSS and PHP to build your own themes.
+					</p>
+				</section>	
+				
+				<section>
+					<h2>Where to go from here?</h2>
+					<h3>Power users</h3>
+
+					<p>
+						<strong>Theme Frameworks</strong>
+					</p>
+
+					<ul>
+						<li><a href="http://my.studiopress.com/themes/genesis/" target="_blank"><strong>Genesis</strong></a> - The Genesis Framework empowers you to quickly and easily build incredible websites with WordPress.</li>
+						<li><a href="http://diythemes.com/" target="_blank"><strong>Thesis</strong></a> - Web design that you can customize from the comfort of your WordPress dashboard</li>
+						<li><a href="http://www.woothemes.com/" target="_blank"><strong>WooThemes Canvas</strong></a> - WordPress theme with facilities to change just about every element of the layout and style</li>
+						<li><a href="http://athemes.com/collections/best-wordpress-theme-frameworks" target="_blank"><strong>And many more!</strong></a></li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Where to go from here?</h2>
+					<h3>Power users</h3>
+
+					<p>
+						<strong>Theme Frameworks</strong>
+					</p>
+
+					<p>
+						Demo of the WooTheme, Canvas.
+					</p>
+				</section>	
+				
+				<section>
+					<h2>Where to go from here?</h2>	
+					<h3>Web designers</h3>
+
+					<p>
+						Folks with HTML/CSS skillset can customize or build their own WordPress themes.
+					</p>
+
+					<p>
+						Take my <strong>Buliding Themes for WordPress</strong> GDI class in April. :-)
+					</p>
+				</section>	
+				
+				<section>
+					<h2>Resources</h2>
+					<h3>Join the Girl Develop It Philly - WordPress Group on Facebook</h3>
+
+					<p>
+						A Facebook group for Girl Develop It Philly students where members can network with each other, post questions and help each other navigate the world of WordPress.
+					</p>
 					
 					<p>
 						<a href="https://www.facebook.com/groups/gdiphillywordpress/" target="_blank">facebook.com/groups/gdiphillywordpress</a>
 					</p>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Resources</h2>
 					<h3>Join the Philly WordPress Meetup Group</h3>
 
 					<p>
 						The Philadelphia WordPress Meetup Group is a group of WordPress enthusiasts in and around the Philadelphia area who love working with WordPress in a variety of different ways. 
-					<p>
+					</p>
 					
 					<p>
 						<a href="http://www.meetup.com/Philadelphia-WordPress-Meetup-Group/" target="_blank">meetup.com/Philadelphia-WordPress-Meetup-Group</a>
 					</p>
 				</section>	
 				
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h2>Resources</h2>
 					<h3>Attend a WordCamp</h3>
 
 					<p>
 						WordCamps are affordable, informal, community-organized WordPress conferences held all over the world. They are packed with workshops geared toward WordPress users, designers and developers.
-					<p>
+					</p>
 					
 					<p>
 						<a href="http://central.wordcamp.org/" target="_blank">central.wordcamp.org</a>
 					</p>
 				</section>
+
 				
 				<section>
-					<h1>THE END of Day 1</h1>
+					<h1>THE END</h1>
 
-					<h4>Questions and 1-on-1 help time!</h4>
+					<h4>Thank you!</h4>
+					<p>And please take <a href="http://bit.ly/gdi-wordpress" target="_blank">the GDI survey</a></p>
 				</section>
 
 			</div>
 			
 			<footer>
 				<div class="copyright">
-				  WordPress 101 &#187; With Tracy Levesque &#8226; @LilJimmi &#8226; tracy@yikesinc.com &#8226; yikesinc.com 
+				  WordPress 101 &#187; With Tracy Levesque &#8226; <a href="https://twitter.com/LilJimmi" target="_blank">@LilJimmi</a> &#8226; 
+				  <a href="mailto:tracy@yikesinc.com">tracy@yikesinc.com</a> &#8226; 
+				  <a href="http://yikesinc.com" target="_blank">yikesinc.com</a>
 				  <span class="footer-nav"><a href="#/beginning-slide">Start</a></span>
 				</div>
-			</footer>
-		</div>
+			</footer>						
 
+		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
@@ -594,14 +871,19 @@
 				controls: true,
 				progress: true,
 				history: true,
+				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
