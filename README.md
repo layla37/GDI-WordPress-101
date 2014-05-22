@@ -1,4 +1,4 @@
-GDI-WordPress-101
+GDI San Francisco - WordPress 101
 =================
 
-Girl Develop It Philly - WordPress 101 slides
+Girl Develop It San Francisco - WordPress 101 slides (Forked from Tracy Levesque's Girl Develop It Philly - WordPress 101 slides)
